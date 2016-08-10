@@ -9,6 +9,33 @@
     <title>Form letter</title>
   </head>
   <body>
-
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li role="presentation"><a href="index.html">Madlibs</a></li>
+        <li role="presentation" class="active"> <a href="letter.html">Letter</a></li>
+      </ul>
+      <h1>Create your form letter.</h1>
+      <div id="letter-form">
+        <form>
+          <div class="form-group">
+            <label for="toName">Enter the name of the person you're sending to.</label>
+            <input id="toName" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="fromName">Enter your name.</label>
+            <input id="fromName" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">View your letter.</button>
+        </form>
+      </div>
+      <div id="letter">
+        <p>Dear <span class="toName"></span>,</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="pull-right" id="sincerely">Sincerely,
+        <br>
+        <span class="fromName"></span></p>
+      </div>
+    </div>
   </body>
 </html>

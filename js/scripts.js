@@ -16,5 +16,15 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+  $("#letter-form form").submit(function(event) {
+    var nameInput = $("input#toName").val();
+    var otherName = $("input#fromName").val();
 
+    $(".toName").text(nameInput);
+    $(".fromName").text(otherName);
+
+    $("#letter").show();
+
+    event.preventDefault();
+  });
 });

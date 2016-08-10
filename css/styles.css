@@ -5,3 +5,14 @@
 span {
   color: red;
 }
+
+#letter {
+  display: none;
+  margin-top: 5%;
+  font-size: 18px;
+  font-family: monospace;
+}
+.fromName, #sincerely {
+  font-family: cursive;
+  font-size: 24px;
+}
